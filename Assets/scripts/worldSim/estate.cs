@@ -273,7 +273,7 @@ public class estate : MonoBehaviour {
             tradeFood =  (-1) * (foodDeficit);
         }
 
-        //Workshops, cathedrals, churches, and universities don't do anything yet. Still need to add mines.
+        //Workshops, cathedrals, churches, and universities don't do anything yet.
 
         if (population / 1000 > workshops)
         {
@@ -297,7 +297,7 @@ public class estate : MonoBehaviour {
             {
                 peopleToUse = Mathf.Clamp(Mathf.Clamp(Mathf.Clamp(1000000000000, 0f, mines * buildingScaler), 0f, unusedPopulation), 0f, mines * buildingScaler);
 
-                int produced = produceGood(peopleToUse, mines, 0);
+                int produced = produceGood(peopleToUse, mines, miningTech);
                 if (produced > oreUnmined)
                 {
                     produced = oreUnmined;
