@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -159,13 +159,21 @@ MonoBehaviour:
   isSeatOfBishop: 1
   silverInDenari: 1000000
   oreIron: 0
-  gold: 0
+  preciousMetals: 0
   metal: 0
   wood: 0
-  finishedGoods: 0
+  metalGoods: 0
   food: 0
+  woodGoods: 0
+  jewelleryGoods: 0
   tradeFood: 0
   tradeWood: 0
+  tradeOreIron: 0
+  tradePreciousMetals: 0
+  tradeMetal: 0
+  tradeWoodGoods: 0
+  tradeMetalGoods: 0
+  tradeJewelleryGoods: 0
   farmingTech: 1
   industrialTech: 1
   miningTech: 1
@@ -415,13 +423,21 @@ MonoBehaviour:
   isSeatOfBishop: 0
   silverInDenari: 100000
   oreIron: 0
-  gold: 0
+  preciousMetals: 0
   metal: 0
   wood: 0
-  finishedGoods: 0
+  metalGoods: 0
   food: 0
+  woodGoods: 0
+  jewelleryGoods: 0
   tradeFood: 0
   tradeWood: 0
+  tradeOreIron: 0
+  tradePreciousMetals: 0
+  tradeMetal: 0
+  tradeWoodGoods: 0
+  tradeMetalGoods: 0
+  tradeJewelleryGoods: 0
   farmingTech: 1
   industrialTech: 1
   miningTech: 1
@@ -501,13 +517,21 @@ MonoBehaviour:
   isSeatOfBishop: 0
   silverInDenari: 100000
   oreIron: 0
-  gold: 0
+  preciousMetals: 0
   metal: 0
   wood: 0
-  finishedGoods: 0
+  metalGoods: 0
   food: 0
+  woodGoods: 0
+  jewelleryGoods: 0
   tradeFood: 0
   tradeWood: 0
+  tradeOreIron: 0
+  tradePreciousMetals: 0
+  tradeMetal: 0
+  tradeWoodGoods: 0
+  tradeMetalGoods: 0
+  tradeJewelleryGoods: 0
   farmingTech: 1
   industrialTech: 1
   miningTech: 1
@@ -587,13 +611,21 @@ MonoBehaviour:
   isSeatOfBishop: 0
   silverInDenari: 100000
   oreIron: 0
-  gold: 0
+  preciousMetals: 0
   metal: 0
   wood: 0
-  finishedGoods: 0
+  metalGoods: 0
   food: 0
+  woodGoods: 0
+  jewelleryGoods: 0
   tradeFood: 0
   tradeWood: 0
+  tradeOreIron: 0
+  tradePreciousMetals: 0
+  tradeMetal: 0
+  tradeWoodGoods: 0
+  tradeMetalGoods: 0
+  tradeJewelleryGoods: 0
   farmingTech: 1
   industrialTech: 1
   miningTech: 1
@@ -844,13 +876,21 @@ MonoBehaviour:
   isSeatOfBishop: 0
   silverInDenari: 100000
   oreIron: 0
-  gold: 0
+  preciousMetals: 0
   metal: 0
   wood: 0
-  finishedGoods: 0
+  metalGoods: 0
   food: 0
+  woodGoods: 0
+  jewelleryGoods: 0
   tradeFood: 0
   tradeWood: 0
+  tradeOreIron: 0
+  tradePreciousMetals: 0
+  tradeMetal: 0
+  tradeWoodGoods: 0
+  tradeMetalGoods: 0
+  tradeJewelleryGoods: 0
   farmingTech: 1
   industrialTech: 1
   miningTech: 1
@@ -1066,13 +1106,21 @@ MonoBehaviour:
   isSeatOfBishop: 0
   silverInDenari: 1000000
   oreIron: 0
-  gold: 0
+  preciousMetals: 0
   metal: 0
   wood: 1500
-  finishedGoods: 0
+  metalGoods: 0
   food: 0
+  woodGoods: 0
+  jewelleryGoods: 0
   tradeFood: 0
   tradeWood: 0
+  tradeOreIron: 0
+  tradePreciousMetals: 0
+  tradeMetal: 0
+  tradeWoodGoods: 0
+  tradeMetalGoods: 0
+  tradeJewelleryGoods: 0
   farmingTech: 1
   industrialTech: 1
   miningTech: 1
@@ -1152,13 +1200,21 @@ MonoBehaviour:
   isSeatOfBishop: 0
   silverInDenari: 100000
   oreIron: 0
-  gold: 0
+  preciousMetals: 0
   metal: 0
   wood: 0
-  finishedGoods: 0
+  metalGoods: 0
   food: 0
+  woodGoods: 0
+  jewelleryGoods: 0
   tradeFood: 0
   tradeWood: 0
+  tradeOreIron: 0
+  tradePreciousMetals: 0
+  tradeMetal: 0
+  tradeWoodGoods: 0
+  tradeMetalGoods: 0
+  tradeJewelleryGoods: 0
   farmingTech: 1
   industrialTech: 1
   miningTech: 1
@@ -1238,13 +1294,21 @@ MonoBehaviour:
   isSeatOfBishop: 0
   silverInDenari: 100000
   oreIron: 0
-  gold: 0
+  preciousMetals: 0
   metal: 0
   wood: 0
-  finishedGoods: 0
+  metalGoods: 0
   food: 0
+  woodGoods: 0
+  jewelleryGoods: 0
   tradeFood: 0
   tradeWood: 0
+  tradeOreIron: 0
+  tradePreciousMetals: 0
+  tradeMetal: 0
+  tradeWoodGoods: 0
+  tradeMetalGoods: 0
+  tradeJewelleryGoods: 0
   farmingTech: 1
   industrialTech: 1
   miningTech: 1
@@ -1298,7 +1362,7 @@ Transform:
   m_GameObject: {fileID: 1984326876}
   m_LocalRotation: {x: 0.45064384, y: -0, z: -0, w: 0.89270383}
   m_LocalPosition: {x: -0.5, y: -10, z: -0.5}
-  m_LocalScale: {x: 12, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
@@ -1425,13 +1489,21 @@ MonoBehaviour:
   isSeatOfBishop: 0
   silverInDenari: 10000000
   oreIron: 0
-  gold: 0
+  preciousMetals: 0
   metal: 0
   wood: 0
-  finishedGoods: 0
+  metalGoods: 0
   food: 0
+  woodGoods: 0
+  jewelleryGoods: 0
   tradeFood: 0
   tradeWood: 0
+  tradeOreIron: 0
+  tradePreciousMetals: 0
+  tradeMetal: 0
+  tradeWoodGoods: 0
+  tradeMetalGoods: 0
+  tradeJewelleryGoods: 0
   farmingTech: 1
   industrialTech: 1
   miningTech: 1
@@ -1511,13 +1583,21 @@ MonoBehaviour:
   isSeatOfBishop: 0
   silverInDenari: 100000
   oreIron: 0
-  gold: 0
+  preciousMetals: 0
   metal: 0
   wood: 0
-  finishedGoods: 0
+  metalGoods: 0
   food: 0
+  woodGoods: 0
+  jewelleryGoods: 0
   tradeFood: 0
   tradeWood: 0
+  tradeOreIron: 0
+  tradePreciousMetals: 0
+  tradeMetal: 0
+  tradeWoodGoods: 0
+  tradeMetalGoods: 0
+  tradeJewelleryGoods: 0
   farmingTech: 1
   industrialTech: 1
   miningTech: 1
