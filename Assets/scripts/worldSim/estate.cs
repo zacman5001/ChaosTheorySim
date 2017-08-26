@@ -40,11 +40,14 @@ public class estate : MonoBehaviour {
     //Stocks
     public float silverInDenari = 200000000;
     public int oreIron;
-    public int gold;
+    public int preciousMetals;
     public int metal;
     public int wood;
-    public int finishedGoods;
+    public int metalGoods;
     public int food;
+    public int woodGoods;
+    public int jewelleryGoods;
+
 
     //Trade Optimizers
     int idealWood = 1000; //test
@@ -59,6 +62,12 @@ public class estate : MonoBehaviour {
     //Trade Orders
     public int tradeFood;
     public int tradeWood;
+    public int tradeOreIron;
+    public int tradePreciousMetals;
+    public int tradeMetal;
+    public int tradeWoodGoods;
+    public int tradeMetalGoods;
+    public int tradeJewelleryGoods;
 
 
     //Tech
@@ -97,6 +106,7 @@ public class estate : MonoBehaviour {
     //Calculation data
     int foodDeficit;
     int woodDeficit;
+    string tradeGood;
     bool isInFamine;
     int citySizeInSquareKm;
     public float peopleToUse;
@@ -125,6 +135,33 @@ public class estate : MonoBehaviour {
         unusedPopulation -= popToUse;
         float produced = popToUse * (1 + techLevel / 10);
         return Mathf.FloorToInt(produced);
+    }
+
+    string evaluateTradeGood()
+    {
+        //This code is fucked
+        if (tradeWoodGoods < tradeMetalGoods)
+        {
+            if (tradeWoodGoods < tradeJewelleryGoods)
+            {
+                return "woodGoods";
+            }
+            else
+            {
+                return "jewelleryGoods";
+            }
+        }
+        else
+        {
+            if (tradeMetalGoods < tradeJewelleryGoods)
+            {
+                return "metalGoods";
+            }
+            else
+            {
+                return "jewelleryGoods";
+            }
+        }
     }
 
     void attemptToBuild(string name)
@@ -336,10 +373,10 @@ public class estate : MonoBehaviour {
             }
 
         }
-
+       
         wood = wood + produceGood(unusedPopulation, lumberMills, 0);
         tradeWood = (-1) * (woodDeficit);
-
+            
 
 
         //Do forced actions
@@ -355,6 +392,7 @@ public class estate : MonoBehaviour {
         {
             isInFamine = false;
         }
+        tradeGood = evaluateTradeGood();
     }
 
 
