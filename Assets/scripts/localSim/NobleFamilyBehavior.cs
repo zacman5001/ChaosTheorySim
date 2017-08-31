@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class NobleFamilyBehavior : MonoBehaviour {
 
+    // Name
+    private string name;
+
     // Decision-making metrics
     private int economicSatisfaction;
     private int politicalSatisfaction;
