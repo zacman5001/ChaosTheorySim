@@ -22,7 +22,7 @@ public class select : MonoBehaviour {
                     previousSelected.GetComponent<MeshRenderer>().material.color = oldColor;
                 }
                 oldColor = selected.GetComponent<MeshRenderer>().material.color;
-                selected.GetComponent<MeshRenderer>().material.color = new Color (1,1,222);
+                selected.GetComponent<MeshRenderer>().material.color = new Color (0,0,1);
                 previousSelected = selected;
             }
         }
