@@ -8,7 +8,7 @@ public class enterRoom : MonoBehaviour {
     public GameObject cameraOne;
     public GameObject cameraTwo;
 
-    public void switchCamera()
+    void switchCamera()
     {
         if (cameraOne.active == true)
         {
