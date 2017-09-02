@@ -6,6 +6,8 @@ public class createAtCurser : MonoBehaviour {
 
     public GameObject zone;
     public GameObject road;
+    public GameObject assignLandPanel;
+    public GameObject manager;
     GameObject placedObject;
     
     void Start()
@@ -31,7 +33,12 @@ public class createAtCurser : MonoBehaviour {
             RaycastHit hit; 
             if (Physics.Raycast(ray, out hit, 10000) & (hit.collider.gameObject.name == "Terrain"))
                 {
-                    Instantiate(placedObject, hit.point, Quaternion.identity);
+                GameObject justPlaced = Instantiate(placedObject, hit.point, Quaternion.identity);
+                if (placedObject == zone) {
+                    justPlaced.GetComponent<ActivityZone>().assignLandContent = this.assignLandPanel;
+                    justPlaced.GetComponent<ActivityZone>().manager = this.manager;
+                    justPlaced.GetComponent<ActivityZone>().CheckOwnership();
+                }
             }
         }
     }

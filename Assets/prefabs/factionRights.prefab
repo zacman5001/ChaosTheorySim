@@ -38,7 +38,7 @@ GameObject:
   - component: {fileID: 224506470680494154}
   - component: {fileID: 114661284325517840}
   m_Layer: 5
-  m_Name: Toggle (3)
+  m_Name: LootingToggle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -54,7 +54,7 @@ GameObject:
   - component: {fileID: 224968128283779176}
   - component: {fileID: 114011573458300762}
   m_Layer: 5
-  m_Name: Toggle (1)
+  m_Name: FarmingToggle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -89,6 +89,7 @@ GameObject:
   - component: {fileID: 114918578305809582}
   - component: {fileID: 114416571872782710}
   - component: {fileID: 114604038428714482}
+  - component: {fileID: 114048363906437398}
   m_Layer: 5
   m_Name: factionRights
   m_TagString: Untagged
@@ -191,7 +192,7 @@ GameObject:
   - component: {fileID: 224880719621482096}
   - component: {fileID: 114380161895909876}
   m_Layer: 5
-  m_Name: Toggle (2)
+  m_Name: LoggingToggle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -207,7 +208,7 @@ GameObject:
   - component: {fileID: 224183886949562286}
   - component: {fileID: 114193979637823796}
   m_Layer: 5
-  m_Name: Toggle
+  m_Name: HuntingToggle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -292,6 +293,22 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.Toggle+ToggleEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
   m_IsOn: 1
+--- !u!114 &114048363906437398
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1358104510606108}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc8121e8d0ba5ab4ba762f528895b0bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  huntingToggle: {fileID: 1721867777997728}
+  farmingToggle: {fileID: 1248100249587192}
+  loggingToggle: {fileID: 1689375441092390}
+  lootingToggle: {fileID: 1163455512497768}
+  text: {fileID: 1723079861694476}
 --- !u!114 &114066104294249642
 MonoBehaviour:
   m_ObjectHideFlags: 1
