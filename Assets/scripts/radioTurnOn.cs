@@ -4,18 +4,19 @@ using UnityEngine;
 
 public class radioTurnOn : MonoBehaviour {
 
-    void turnOn()
+    void turnOnLight()
     {
         gameObject.GetComponent<Light>().color = new Color(0, 1, 0);
     }
 
-    void turnOff()
-    {
-        gameObject.GetComponent<Light>().color = new Color(1, 0, 0);
+    public void turnOn () {
+        Invoke("turnOnLight", 0.85f);
+        gameObject.GetComponent<AudioSource>().Play();
     }
 
-    void Start () {
-        Invoke("turnOn", 0.85f);
-	}
-
+    public void turnOff()
+    {
+        gameObject.GetComponent<Light>().color = new Color(1, 0, 0);
+        gameObject.GetComponent<AudioSource>().Stop();
+    }
 }

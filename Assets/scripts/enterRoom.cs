@@ -7,6 +7,7 @@ public class enterRoom : MonoBehaviour {
     public GameObject lightTwo;
     public GameObject cameraOne;
     public GameObject cameraTwo;
+    public GameObject radio;
 
     public void switchCamera()
     {
@@ -18,6 +19,8 @@ public class enterRoom : MonoBehaviour {
             cameraTwo.SetActive(true);
             lightTwo.SetActive(true);
             lightTwo.GetComponent<Light>().enabled = true;
+            radio.GetComponent<radioTurnOn>().turnOn();
+
 
         }
         else
@@ -28,7 +31,7 @@ public class enterRoom : MonoBehaviour {
             cameraTwo.SetActive(false);
             lightTwo.SetActive(false);
             lightTwo.GetComponent<Light>().enabled = false;
-
+            radio.GetComponent<radioTurnOn>().turnOff();
         }
     }
 }
