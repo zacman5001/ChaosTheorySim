@@ -943,6 +943,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ae85b9608cc68f4bb20f21c3564571a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  farmableTiles: []
+  huntableTiles: []
+  loggableTiles: []
+  scavengeableTiles: []
 --- !u!1 &573910537
 GameObject:
   m_ObjectHideFlags: 0
@@ -4878,6 +4882,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ae85b9608cc68f4bb20f21c3564571a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  farmableTiles: []
+  huntableTiles: []
+  loggableTiles: []
+  scavengeableTiles: []
 --- !u!1 &755346178
 GameObject:
   m_ObjectHideFlags: 0
@@ -6213,6 +6221,26 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1477446996}
   m_Mesh: {fileID: 4300006, guid: ecdfe9f0b8508af4d92737c656e36132, type: 3}
+--- !u!1 &1487443774 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1570305044985602, guid: ce8fe1c6c2e08b14094470d325cea364,
+    type: 2}
+  m_PrefabInternal: {fileID: 1016510715}
+--- !u!54 &1487443780
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1487443774}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1556010214
 GameObject:
   m_ObjectHideFlags: 0
@@ -6887,7 +6915,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -0.000030517578, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 283, y: 537.8}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1698904667
@@ -7846,6 +7874,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ae85b9608cc68f4bb20f21c3564571a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  farmableTiles: []
+  huntableTiles: []
+  loggableTiles: []
+  scavengeableTiles: []
 --- !u!1001 &1968086893
 Prefab:
   m_ObjectHideFlags: 0

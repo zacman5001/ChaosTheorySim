@@ -118,7 +118,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d80476326bd2b1b429e7430b5c591461, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  assignLandPanel: {fileID: 0}
+  assignLandContent: {fileID: 0}
+  manager: {fileID: 0}
+  touchingLoot: 0
 --- !u!114 &114418877435980134
 MonoBehaviour:
   m_ObjectHideFlags: 1

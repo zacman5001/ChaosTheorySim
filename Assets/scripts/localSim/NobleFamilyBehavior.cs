@@ -33,10 +33,10 @@ public class NobleFamilyBehavior : MonoBehaviour {
     private int numHouses;
 
     // Arrays
-    private List<GameObject> farmableTiles = new List<GameObject>();
-    private List<GameObject> huntableTiles = new List<GameObject>();
-    private List<GameObject> loggableTiles = new List<GameObject>();
-    private List<GameObject> scavengeableTiles = new List<GameObject>();
+    public List<GameObject> farmableTiles = new List<GameObject>();
+    public List<GameObject> huntableTiles = new List<GameObject>();
+    public List<GameObject> loggableTiles = new List<GameObject>();
+    public List<GameObject> scavengeableTiles = new List<GameObject>();
 
     // TODO need to add code for AI just regularly maintaining itself (upkeep costs, etc.)
 
