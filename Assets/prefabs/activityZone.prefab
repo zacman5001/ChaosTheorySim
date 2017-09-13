@@ -27,7 +27,7 @@ GameObject:
   - component: {fileID: 114157859238839926}
   m_Layer: 0
   m_Name: activityZone
-  m_TagString: Untagged
+  m_TagString: Activity
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
